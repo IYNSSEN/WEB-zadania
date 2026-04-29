@@ -1,0 +1,37 @@
+{
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript - podstawy",
+    "JSON",
+    "Fetch API",
+    "Local Storage",
+    "GitHub Pages"
+  ],
+  "projects": [
+    "CV jako strona WWW",
+    "Drugi motyw kolorystyczny CSS",
+    "Interakcja JavaScript - Zadanie 4",
+    "Formularz i walidacja - Zadanie 5",
+    "Dane pobierane z JSON - Zadanie 6",
+    "Zapisywanie danych w localStorage - Zadanie 7"
+  ],
+  "experience": [
+    {
+      "title": "Projekt CV jako strona WWW",
+      "description": "Przygotowanie strony CV z wykorzystaniem HTML, CSS i JavaScript."
+    },
+    {
+      "title": "Praca z GitHub Pages",
+      "description": "Publikowanie strony internetowej za pomocą GitHub Pages."
+    },
+    {
+      "title": "Dynamiczne dane z JSON",
+      "description": "Pobieranie danych z pliku data.json i generowanie elementów HTML przez JavaScript."
+    },
+    {
+      "title": "Local Storage",
+      "description": "Zapisywanie projektów użytkownika w przeglądarce i odczytywanie ich po odświeżeniu strony."
+    }
+  ]
+}
