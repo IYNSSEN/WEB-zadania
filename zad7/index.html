@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>CV - Ismail Yunus Sen - Zadanie 7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="green-theme">
+
+  <!-- Numer indeksu: 64132 -->
+
+  <header>
+    <h1>Ismail Yunus Sen</h1>
+    <p>Student IT - Web Development</p>
+    <img src="profile.jpg" alt="Zdjęcie profilowe Ismail Yunus Sen" class="profile-photo">
+  </header>
+
+  <main>
+    <section>
+      <h2>Kontakt</h2>
+      <p>E-mail: <a href="mailto:ismailyunussen@gmail.com">ismailyunussen@gmail.com</a></p>
+      <p>Telefon: <a href="tel:+48513097007">+48 513 097 007</a></p>
+      <p>Miasto: Warszawa</p>
+      <p>
+        <a href="https://github.com/IYNSSEN" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/iyunussen" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>O mnie</h2>
+      <p>
+        Jestem studentem kierunku IT. Interesuję się tworzeniem stron internetowych,
+        HTML, CSS oraz JavaScript. Uczę się budowania prostych, interaktywnych stron WWW.
+      </p>
+    </section>
+
+    <section>
+      <h2>Dane z JSON</h2>
+      <p>
+        Umiejętności, projekty i doświadczenie są pobierane z pliku
+        <strong>data.json</strong> za pomocą funkcji <strong>fetch()</strong>.
+      </p>
+      <p id="jsonStatus" class="success">Ładowanie danych z pliku JSON...</p>
+    </section>
+
+    <section>
+      <h2>Umiejętności</h2>
+      <ul id="skillsList"></ul>
+    </section>
+
+    <section id="projekty">
+      <h2>Projekty z pliku JSON</h2>
+      <ul id="projectsList"></ul>
+    </section>
+
+    <section>
+      <h2>Doświadczenie</h2>
+      <div id="experienceList"></div>
+    </section>
+
+    <section>
+      <h2>Edukacja</h2>
+      <p>Studia w Polsce, kierunek związany z IT oraz web development.</p>
+    </section>
+
+    <section class="buttons">
+      <h2>Interakcja JavaScript</h2>
+
+      <button id="themeButton" type="button">
+        Zmień motyw green / red
+      </button>
+
+      <button id="toggleProjectsButton" type="button">
+        Ukryj / pokaż sekcję Projekty z JSON
+      </button>
+    </section>
+
+    <section>
+      <h2>Local Storage - własne projekty</h2>
+      <p>
+        W tym miejscu użytkownik może dodać nowy projekt. Dane są zapisywane
+        w <strong>localStorage</strong>, dlatego pozostają na stronie po odświeżeniu przeglądarki.
+      </p>
+
+      <form id="storageForm">
+        <div class="form-group">
+          <label for="projectInput">Nazwa projektu</label>
+          <input type="text" id="projectInput" placeholder="Np. Projekt z JavaScript">
+          <p class="error" id="storageError"></p>
+        </div>
+
+        <button type="submit">Dodaj projekt</button>
+      </form>
+
+      <h3>Moje projekty zapisane w localStorage:</h3>
+      <ul id="localProjectsList" class="storage-list"></ul>
+    </section>
+
+    <section>
+      <h2>Formularz kontaktowy</h2>
+
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="firstName">Imię</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Wpisz imię">
+          <p class="error" id="firstNameError"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Nazwisko</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Wpisz nazwisko">
+          <p class="error" id="lastNameError"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com">
+          <p class="error" id="emailError"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Wiadomość</label>
+          <textarea id="message" name="message" rows="5" placeholder="Wpisz wiadomość"></textarea>
+          <p class="error" id="messageError"></p>
+        </div>
+
+        <button type="submit">Wyślij formularz</button>
+
+        <p id="successMessage" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Numer indeksu: 64132</p>
+    <p>Zadanie 7 - Local Storage</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
